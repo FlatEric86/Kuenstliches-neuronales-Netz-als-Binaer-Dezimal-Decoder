@@ -1,4 +1,4 @@
-# K-nstliches-neuronales-Netz-als-Bin-r-Dezimal-Decoder
+# Kuenstliches-neuronales-Netz-als-Binaer-Dezimal-Decoder
 Ein einfaches einschichtiges neuronales Netz zum Konvertieren von 16 Bit binäre Integer Zahlen in dezimale Zahlen.
 
 Dieses künstliche neuronale Netz ist in der Lage 16 Bit Integer in Dezimalzahlen zu konvertieren.
