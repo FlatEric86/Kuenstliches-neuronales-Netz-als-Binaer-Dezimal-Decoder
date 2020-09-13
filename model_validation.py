@@ -58,6 +58,9 @@ with open('./validation_data.csv') as fin:
             
             
             x = torch.tensor(bin_val).float().to(device)
+            
+            # the converted number ... here is the crux, because the Net produces floating point numbers which have to get convertet into
+            # integer by rounding them. This is a critical part, because rounding errors may produce model errors.
             y = int(round(float(netz(x))))
             
             # print(80*'#')
