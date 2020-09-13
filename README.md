@@ -3,6 +3,7 @@ Ein einfaches einschichtiges neuronales Netz zum Konvertieren von 16 Bit binäre
 
 Dieses künstliche neuronale Netz ist in der Lage 16 Bit Integer in Dezimalzahlen zu konvertieren.
 Interessant ist, dass es lediglich ein Hidden-Layer benötigt um dieses Problem zu lösen.
+Natürlich ist ein solcher "Konverter" overkill. Zumal a) die Rechenzeit höher ist als beim konventionellen Algorithmus und b) das Netz nicht mit einer 100%'igen Genauigkeit arbeitet, also möglich sind.
 
 Mit dem Skript t_data_gen.py können sowohl Trainingsdaten (schon vorliegend als t_data.csv) sowie Validierungsdaten (vorliegend als validation_data.csv) generiert werden.
 
