@@ -11,8 +11,6 @@ import time as t
 import matplotlib.pyplot as plt
 
 
-
-# define device in dependency if CUDA is available or not. 
 device   = torch.device('cpu')
 
 
@@ -23,15 +21,12 @@ class model(nn.Module):
         super(model, self).__init__()
         
         self.lin1 = nn.Linear(16, 128)
-        #self.lin2 = nn.Linear(256, 256)
-        self.lin6 = nn.Linear(128, 1)      
+        self.lin2 = nn.Linear(128, 1)      
         
     def forward(self, x):
-    
-        #x = self.lin1(x)
-
+   
         x = torch.nn.functional.relu(self.lin1(x))
-        x = torch.nn.functional.relu(self.lin6(x))
+        x = torch.nn.functional.relu(self.lin2(x))
                
         return x
    
