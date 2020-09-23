@@ -24,8 +24,8 @@ Ein künstlicher Bias durch falsch gelabelte Daten ist immer der erste Gedanke, 
 automatisiert zusammen mit einem Tool aus einer Python-Standardbibliothek generiert wurden. Es sollte also angenommen werden, dass der Encoder auch fehlerfrei arbeitet, also die Daten korrekt gelabelt sind. 
 Ein möglicher Grund könnte in der Verlustfunktion liegen. Es wurde der mittlere quadratische Fehler als Verlustfunktion gewählt. 
 
-'''math
-err=\Sum{i=1}{N}{(y_{modell_{i}}-y_{real_{i}})^2 }
-'''
+```math
+SE = \frac{\sigma}{\sqrt{n}}
+```
 
 
