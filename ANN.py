@@ -74,14 +74,14 @@ class model(nn.Module):
         
     def forward(self, x):
     
-        x = torch.nn.functional.relu(self.lin1(x))
+        x = self.lin1(x)
         x = torch.nn.functional.relu(self.lin6(x))
                 
         return x
         
       
 # number of learning iterations      
-N_epoch = 5000
+N_epoch = 30000
 
 # learning rate
 lr      = 0.00005  
@@ -99,7 +99,7 @@ if os.path.isfile('./weights.pt'):
     
     
 # optimizer = torch.optim.SGD(netz.parameters(), lr=lr)
-optimizer = torch.optim.Adam(netz.parameters(), lr=lr)
+optimizer = torch.optim.Adam(netz.parameters())
 
 # we do instantiate a loss object here
 loss_function = nn.MSELoss()   
