@@ -15,5 +15,9 @@ Mit dem aktuellen Modellstand (repräsentiert durch die Datei weights.pt) wird e
 
 # ...und warum "nur" 0.9981 ?
 
+Es liegen für die Validierung 20000 X-Y-Tupel vor von denen 19962 richtig klassifiziert wurden da:
+
+<img src="https://latex.codecogs.com/gif.latex?0.9981*20000 = 19922 " /> 
+
 
 
