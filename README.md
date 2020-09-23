@@ -13,17 +13,7 @@ Mit dem Skript model_validation.py kann die Modellgüte in Form der Accuracy bes
 
 Mit dem aktuellen Modellstand (repräsentiert durch die Datei weights.pt) wird ein Accuracy von 0.9981 erreicht. 
 
-# ...und warum "nur" 0.9981 ???
-
-Es liegen für die Validierung 20000 X-Y-Tupel vor von denen 19962 richtig klassifiziert wurden da:
-
-<img src="https://latex.codecogs.com/gif.latex?0.9981*20000=19962 " /> 
-
-ergo sind 38 X-Y-Tupel falsch klassifiziert wurden. Zwar ist eine Accuracy von 0.9981 etwas, das so ziemlich jeden Machine Learning Engineer vor Freude Purzelbäume schlagen lässt, aber wenn man die arithmetische Einfachheit bei diesem Problem bedenkt, sollten bessere Ergebnisse durchaus drin sein. 
-Ein künstlicher Bias durch falsch gelabelte Daten ist immer der erste Gedanke, welcher aber in diesem Fall verworfen werden kann/sollte, da die Daten
-automatisiert zusammen mit einem Tool aus einer Python-Standardbibliothek generiert wurden. Es sollte also angenommen werden, dass der Encoder auch fehlerfrei arbeitet, also die Daten korrekt gelabelt sind. 
-Ein möglicher Grund könnte in der Verlustfunktion liegen. Es wurde der mittlere quadratische Fehler als Verlustfunktion gewählt. 
 
 
-<img src="https://latex.codecogs.com/gif.latex?err=\Sum{ i=1 }{ N }{ (y_{modell_{i}}-y_{real_{i}})^2 } " /> 
+
 
